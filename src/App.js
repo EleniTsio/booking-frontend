@@ -12,6 +12,7 @@ import Sidebar from "./components/Sidebar";
 import ControlPanel from "./pages/ControlPanel";
 import Home from "./pages/Home"
 import Login from "./pages/Login";
+import Register from "./pages/Register"
 
 const Layout = () => {
   return (
@@ -44,7 +45,10 @@ const router = createBrowserRouter([
         {
          path: '/login',
          element: <Login />,
-      },
+      },{
+         path: '/register',
+         element: <Register />
+      }
      ],
   },
   {
